@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Proyectos y Empleados</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <a class="navbar-brand" href="https://www.espe.edu.ec/" target="_blank">
+        <img src="images/logo-espe.png"  width="380" height="50">
+    </a>
+        <h1>Sistema de gestión de Proyectos y Empleados</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html" > Inicio</a></li>
+            <li><a href="#" onclick="loadProyectos()"> CRUD Proyectos</a></li>
+            <li><a href="#" onclick="loadEmpleados()">CRUD Empleados</a></li>
+            <li><a href="#" onclick="loadAsignacion()">Asignacion de proyectos</a></li>
+            <li><a href="#" onclick="loadInfo()">Acerca de nosotros</a></li>
+        </ul>
+    </nav>
+    <img id="img2" src="images/proceso.png" >
+    <main id="app">
+    </main>
+       
+    <footer>
+        <p>&copy; 2024 Gestión de Proyectos y Empleados | Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="src/gestion-proyectos.js"></script>
+    <script src="src/gestion-empleados.js"></script>
+    <script src="src/gestion-asignacion.js"></script>
+    <script src="src/informacion-grupo.js"></script>
+    
+</body>
+</html>
