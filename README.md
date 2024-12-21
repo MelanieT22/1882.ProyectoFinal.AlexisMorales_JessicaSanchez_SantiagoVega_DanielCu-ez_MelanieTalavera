@@ -1,3 +1,4 @@
+
 # Actividad de aprendizaje N.°3
 # Desarrollo de una aplicación web interactiva
 
@@ -22,28 +23,50 @@ Los requisitos de la actividad son los siguientes:
 La actividad que se realizó se basa en desarrollar una aplicación web que gestione empleados, proyectos y las asignaciones de empleados a proyectos. Esta aplicación permite crear, editar y eliminar empleados y proyectos, así como asignar empleados a proyectos específicos, definiendo su rol en cada uno.
 
 # Instrucciones para ejecutarlo:
-
-Como primero punto se recomienda utilizar un servidor local.
-- Puede emplear herramientas como Live Server en Visual Studio Code o XAMPP para este propósito.
   
 *Pasos para Ejecutar:*
 
-1. Abra el archivo HTML principal en su editor de código.
-2. Inicie el servidor local.
-3. Una vez cargada la aplicación en el navegador, podrá interactuar con las diferentes secciones:
+1. Abrir el archivo HTML principal (index.html) en su editor de código.
+2. Una vez cargada la aplicación en el navegador, se podrá interactuar con las diferentes secciones:
 - Gestión de Empleados: Agregar, editar o eliminar empleados.
 - Gestión de Proyectos: Crear, modificar o eliminar proyectos.
 - Asignación de Empleados a Proyectos: Asignar roles específicos a empleados en diversos proyectos.
 - Información del Equipo: Visualizar detalles sobre los miembros del equipo.
 
-  ![image](https://github.com/user-attachments/assets/7ac252bc-d939-4ff4-afd9-74e1a6dfd9b8)
+  ![image](https://github.com/user-attachments/assets/7562b0b3-9ffb-4baf-9040-a766e9fe33cf)
 
-
-Nota: Dado que los datos se almacenan en memoria durante la sesión, al recargar la página, toda la información ingresada se perderá. Para implementar persistencia de datos, sería necesario integrar una base de datos o utilizar almacenamiento local del navegador.
+Nota: Dado que los datos se almacenan en memoria durante la sesión, al recargar la página, toda la información ingresada se perderá. Para implementar persistencia de datos, sería necesario integrar una base de datos o en este caso utilizar almacenamiento local del navegador (localstorage).
 
 # Funcionamiento de la Aplicación:
 
-La interfaz de usuario se compone de formularios para ingresar y editar información de empleados, proyectos y asignaciones.
-Las listas de empleados, proyectos y asignaciones se muestran dinámicamente en la página, permitiendo la interacción mediante botones de edición y eliminación.
-Las funciones JavaScript manejan eventos como el envío de formularios y clics en botones, actualizando los arreglos correspondientes y reflejando los cambios en la interfaz.
+En primera lugar se tiene una pagina principal en el que al dar un click en el logo de la Universidad dirigiendonos a la pagina oficial, y ademas tiene un menu en el que podemos navegar a los distintos apartados pedidos en la actividad como:
+
+1. CRUD empleados:
+
+En la pagina principal al acceder al apartado de "CRUD Empleados", nos dirige a un registro donde mediante un formulario se accede los datos como:
+
+- Nombre del empleado (input type text)
+- Puesto (input type text)
+- Salario (input type number)
+
+Luego de llenarlo mediante el boton GUARDAR con su respectvo evento Listener configurado en el javascript, nos reflejara automaticamente mediante el uso de los arrays en la parte inferior todos los registros, ademas las listas de empleados, proyectos y asignaciones se muestran dinámicamente en la página, permitiendo la interacción mediante botones de edición y eliminación.
+
+Como punto adicional como ya se menciona, las funciones JavaScript manejan eventos como el envío de formularios y clics en botones, actualizando los arreglos correspondientes y reflejando los cambios en la interfaz.
+
+2. CRUD proyectos:
+
+De la misma manera al acceder en su respectiva opcion en el menu, procedera a tener una funcionalidad similar, obviamente con campos diferentes como:
+
+- Nombre del proyecto (input type text)
+- Fecha de inicio (input type data)
+- Fecha de finalizacion (input type data)
+
+la funcionalida de botones es la misma que con el crud de empleados similares funciones en su javascript, de igual manera listandoles automaticamente en la parte inferior.
+
+3. Acerca de nosostros:
+
+Opcion en el menu que no muestra mas que la informacion de los integrantes del grupo de trabajo.
+
+Cabe destacar que la pagina se ve bastante estilizada gracias a su CSS respectvo.
+
 
